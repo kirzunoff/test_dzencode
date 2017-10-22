@@ -1,5 +1,6 @@
 @import 'vars'
 @import 'fonts'
+@import 'lightbox'
 
 *
 	margin: 0
@@ -176,6 +177,7 @@ header
 			height: 100%
 			
 		.img_hover
+			display: block
 			position: absolute
 			top: 0
 			width: 100%
@@ -191,7 +193,6 @@ header
 				position: absolute
 				top: 43%
 				left: 43%
-				cursor: pointer
 			&:hover
 				background: rgba(123, 136, 238, .8)
 				&::before
