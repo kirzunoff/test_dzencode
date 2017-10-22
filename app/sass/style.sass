@@ -104,6 +104,61 @@ header
 				font-family: $fs
 				font-size: 40px
 				margin-top: 50px
+.classes
+	@extend %maw_block
+	text-align: center
+	padding: 120px 0 0 0
+	.title
+		h2
+			text-transform: uppercase
+			font-size: 30px
+			font-weight: 700
+			color: $blue
+		p
+			font-family: $fs
+			font-size: 40px
+			color: #777777
+			margin-bottom: 30px
+	.yoga_classes
+		display: flex
+		flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
+		align-items: flex-start
+		align-content: flex-start
+		margin-bottom: 125px
+		.yoga_class
+			max-width: 570px
+			text-align: left
+			box-shadow: 5px 0 15px rgba(153,153,153,.3)
+			border-radius: 7px
+			margin-bottom: 25px
+			&:first-child,
+			&:nth-child(3)
+				margin-right: 30px
+			&::after
+				content: ""
+				clear: both
+				display: block
+			img
+				float: left
+				margin-right: 30px
+				border-top-left-radius: 7px
+				border-bottom-left-radius: 7px
+			h4
+				text-transform: uppercase
+				font-size: 20px
+				font-weight: 700
+				padding-top: 50px
+				color: #777777
+			p
+				font-size: 14px
+				padding-right: 47px
+				margin: 35px 0 17px
+				color: #555555
+			span
+				font-size: 14px
+				color: #999999
 
 
 
