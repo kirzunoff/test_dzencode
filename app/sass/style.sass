@@ -1,7 +1,109 @@
 @import 'vars'
 @import 'fonts'
 
+*
+	margin: 0
+	padding: 0
+body
+	font-family: 'Open Sans', sans-serif
 
+header
+	width: 100%
+	.sticky_menu
+		background: #fff
+		width: 100%
+		.logo
+			display: none
+		ul
+			max-width: 910px
+			height: 100px
+			margin: 0px auto
+			list-style: none
+			li
+				display: inline-block
+				text-align: center
+				margin: 42px 14px 0
+				vertical-align: top
+				&:nth-child(4)
+					margin: 15px 135px 0
+					line-height: 20px
+					cursor: pointer
+					p
+						text-transform: uppercase
+						font-size: 24px
+						color: $blue
+				a
+					font-size: 14px
+					font-weight: 600
+					text-decoration: none
+					color: #555555
+					&.active
+						color: $blue
+						.menu_li_line
+							display: block
+					.menu_li_line
+						display: none
+						width: 30px
+						border-bottom: 1px solid $blue
+						margin: 0 auto
+	.main_header
+		background: url("../img/header_bg.jpg")
+		background-size: cover
+		background-position: top center
+		height: 600px
+		.header_left_col
+			width: 50%
+			float: left
+			.form
+				float: right
+				width: 230px
+				margin: 100px 45px 109px 0
+				padding: 35px 40px 30px 30px
+				background: #fff
+				border-radius: 17px
+				h3
+					font-size: 25px
+					font-weight: 600
+					padding-left: 3px
+					color: $blue
+					margin-bottom: 28px
+				input,
+				select
+					width: 230px
+					outline: none
+					border: none
+					background: #f2f2f2
+					padding: 15px 10px 20px
+					color: #888888
+					font-size: 14px
+					border-radius: 7px
+					margin-bottom: 15px
+				input
+					width: 210px
+				.submit
+					float: right
+					width: 170px
+					border-radius: 7px
+					color: #fff
+					background: #5b6ceb
+					margin: 13px 0 0
+					&:hover
+						background: #475bf1
+						cursor: pointer
+		.header_right_col
+			width: 50%
+			float: left
+			color: #fff
+			h1
+				padding-left: 45px
+				margin-top: 160px
+				font-size: 48px
+				text-transform: uppercase
+			p
+				padding-left: 45px
+				font-family: $fs
+				font-size: 40px
+				margin-top: 50px
 
 
 
