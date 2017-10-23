@@ -246,7 +246,45 @@ header
 				.owl-next::before
 					content: "\e900"
 					right: -25px
-	
+.features
+	width: 100%
+	background: url("../img/features_bg.jpg")
+	background-size: cover
+	background-position: top center
+	.features_block
+		@extend %maw_block
+		padding: 124px 0 80px
+		&::after
+			content: ""
+			clear: both
+			display: block
+		.feature
+			color: #fff
+			min-height: 240px
+			width: 25%
+			float: left
+			text-align: center
+			margin-bottom: 60px
+			.feature_img
+				border: 2px solid #fff
+				width: 70px
+				height: 70px
+				line-height: 70px
+				border-radius: 50%
+				margin: 0 auto
+				img
+					height: 45px
+					padding: 12px 12px
+			h4
+				max-width: 182px
+				margin: 0 auto
+				padding: 32px 0 25px
+				font-size: 18px
+			p
+				max-width: 265px
+				margin: 0 auto
+				font-size: 14px
+				
 	
 
 
