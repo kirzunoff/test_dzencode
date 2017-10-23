@@ -7,7 +7,7 @@ $(function(){
 		itemsTablet: [768,1],
 		navigation: true,
 		pagination: false,
-		navigationText: true,
+		navigationText: false,
 	 });
 	
 	
