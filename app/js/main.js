@@ -8,6 +8,11 @@ $(function(){
 		navigationText: false,
 	 });
 	
-	
+	$(".trainers_carousel").owlCarousel({
+	  items: 1,
+		navigation: true,
+		pagination: true,
+		navigationText: false,
+	});
 	
 });
