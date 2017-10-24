@@ -285,12 +285,12 @@ header
 				margin: 0 auto
 				font-size: 14px
 .shop
-	@extend %maw_block
-	background: url("../img/lotus_bg.jpg")
-	background-size: cover
-	background-position: bottom right	
+	background: url("../img/lotus_bg.jpg") no-repeat
+	background-position: bottom right
+	padding-bottom: 200px
 	.prices
-		margin: 100px 0 107px
+		@extend %maw_block
+		margin: 100px auto 107px
 		&::after
 			content: ""
 			clear: both
@@ -341,11 +341,121 @@ header
 				margin: 0 auto
 				color: #fff
 				border-radius: 17px
+	.trainers_carousel
+		@extend %maw_block
+		background: #fff
+		height: 250px
+		border-radius: 7px
+		box-shadow: 0px 0 25px rgba(153,153,153,.6)
+		.owl-wrapper-outer
+			height: 400px
+		.carousel_item
+			position: relative
+			img
+				padding: 10px
+				border: 2px solid #dadada
+				border-radius: 50%
+				overflow: hiden
+				float: left
+				margin: 55px 46px 0px 63px
+			.trainer_about
+				position: relative
+				width: 690px
+				float: left
+				position: relative
+				padding: 50px 0 0 40px
+				&::before
+					position: absolute
+					content: "\e904"
+					left: -10px
+					font-family: 'icomoon'
+					font-size: 20px
+					color: #5b6ceb
+				&::after
+					position: absolute
+					content: "\e903"
+					bottom: 63px
+					right: -80px
+					font-family: 'icomoon'
+					font-size: 20px
+					color: #5b6ceb
 				
-			
-	
-
-
+				.vertical_line
+					position: absolute
+					bottom: 0
+					left: 0
+					height: 75px
+					width: 2px
+					background: #d7d7d7
+				p
+					width: 645px
+					font-size: 14px
+					font-style: italic
+					color: #555555
+				.position
+					display: block
+					margin-top: 40px
+					font-size: 14px
+					color: #777777
+				.name
+					color: #5b6ceb
+				.trainer_min
+					position: absolute
+					left: 95px
+					bottom: -95px
+					width: 165px
+					img
+						float: left
+						padding: 0
+						margin: 0 10px 0 0
+					p
+						color: #555555
+						font-size: 14px
+						font-weight: 700
+						font-style: normal
+						margin-top: 12px
+					span
+						font-size: 12px
+						color: #777777
+		.owl-controls
+			.owl-pagination
+				.owl-page
+					position: absolute
+					width: 20px
+					height: 20px
+					top: 45px
+					right: -65px
+					background: url("../img/circle.png")
+					background-size: cover
+					&:nth-child(2)
+						top: 83px
+					&:nth-child(3)
+						top: 121px
+					&:last-child
+						top: 159px
+					&.active
+						background: url("../img/dot_in_circle.png")
+						background-size: cover
+						
+			.owl-buttons
+				.owl-prev::before,
+				.owl-next::before
+					position: absolute
+					bottom: -15px
+					color: $blue
+					background: #fff
+					border-radius: 50%
+					font-family: 'icomoon'
+					font-size: 30px
+					font-weight: 500
+					padding: 1px
+					box-shadow: 0 0 15px rgba(153,153,153,.6)
+				.owl-prev::before
+					content: "\e90d"
+					left: 300px
+				.owl-next::before
+					content: "\e900"
+					left: 525px
 
 
 
