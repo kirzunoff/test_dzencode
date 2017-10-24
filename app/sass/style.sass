@@ -276,12 +276,12 @@ header
 					height: 45px
 					padding: 12px 12px
 			h4
-				max-width: 182px
+				width: 182px
 				margin: 0 auto
 				padding: 32px 0 25px
 				font-size: 18px
 			p
-				max-width: 265px
+				width: 265px
 				margin: 0 auto
 				font-size: 14px
 .shop
@@ -296,7 +296,7 @@ header
 			clear: both
 			display: block
 		.block_prices
-			width: 370px
+			max-width: 370px
 			height: 493px
 			float: left
 			border-radius: 9px
@@ -360,7 +360,7 @@ header
 				margin: 55px 46px 0px 63px
 			.trainer_about
 				position: relative
-				width: 690px
+				max-width: 690px
 				float: left
 				position: relative
 				padding: 50px 0 0 40px
@@ -388,7 +388,7 @@ header
 					width: 2px
 					background: #d7d7d7
 				p
-					width: 645px
+					max-width: 645px
 					font-size: 14px
 					font-style: italic
 					color: #555555
@@ -456,7 +456,108 @@ header
 				.owl-next::before
 					content: "\e900"
 					left: 525px
-
+footer
+	width: 100%
+	background: #5b6ceb
+	color: #fff
+	.footer_block
+		height: 450px
+		@extend %maw_block
+		padding-top: 100px
+		&::after
+			content: ""
+			clear: both
+			display: block
+		h4
+			text-transform: uppercase
+			font-size: 18px
+			font-weight: 700
+			margin-bottom: 60px
+		.footer_left_col
+			width: 50%
+			float: left
+			p
+				max-width: 460px
+				font-size: 14px
+				margin-bottom: 70px
+			ul
+				list-style: none
+				li
+					display: inline-block
+					a
+						line-height: 23px
+						width: 25px
+						font-family: 'icomoon'
+						content: "\e90b"
+						font-size: 23px
+						color: #fff
+						padding-right: 15px
+						text-decoration: none
+					&:first-child a::before
+						content: "\e90b"
+					&:nth-child(2) a::before
+						content: "\e907"
+					&:nth-child(3) a::before
+						content: "\e906"
+					&:nth-child(4) a::before
+						content: "\e909"
+					&:nth-child(5) a::before
+						content: "\e90c"
+		.footer_right_col
+			width: 50%
+			float: left
+			ul
+				list-style: none
+				li
+					display: inline-block
+					width: 195px
+					font-family: 'icomoon'
+					vertical-align: top
+					&:first-child,
+					&:nth-child(3)
+						margin: 0 130px 30px 0
+					&:first-child::before
+						content: "\e90a"
+						font-size: 23px
+						float: left
+					&:nth-child(2)::before
+						content: "\e902"
+						font-size: 25px
+						float: left
+					&:nth-child(3)::before
+						content: "\e908"
+						font-size: 23px
+						float: left
+					&:last-child::before
+						content: "\e905"
+						font-size: 17px
+						float: left
+						margin-right: 10px
+					span
+						font-size: 14px
+						display: block
+						padding-left: 33px
+					a
+						text-decoration: none
+						color: #fff
+	.footer_bottom
+		background: #5363d8
+		line-height: 100px
+		width: 100%
+		color: #b7bffc
+		text-align: center
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
