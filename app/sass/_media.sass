@@ -167,11 +167,14 @@
 		ul
 			display: none
 			padding-top: 100px
+			max-width: 100%
+			margin: 0
 			li
 				background: #fff
 				display: block
 				margin: 0
 				padding: 5px
+				width: 100%
 				a
 					font-size: 24px
 				&:nth-child(4)
@@ -257,6 +260,21 @@
 @media only screen and (max-width : 650px)
  /**/
 
+	header
+		#main_header
+			.header_left_col
+				padding-top: 15px
+	footer
+		.footer_block
+			.footer_left_col
+				width: 100%
+				text-align: center
+				p
+					max-width: 100%
+			.footer_right_col
+				margin-top: 50px
+				width: 100%
+				text-align: center
 
 /// Extra Small Devices, Phones /
 @media only screen and (max-width : 480px)
