@@ -7,56 +7,58 @@
 	padding: 0
 body
 	font-family: 'Open Sans', sans-serif
-	.sticky_block
-		position: -webkit-sticky
-		position: -moz-sticky
-		position: -ms-sticky
-		position: -o-sticky
-		position: sticky
-		top: 0
-		z-index: 50
-		background: #fff
-		width: 100%
-		.logo
-			display: none
-		ul
-			max-width: 910px
-			height: 100px
-			margin: 0px auto
-			list-style: none
-			li
-				display: inline-block
-				text-align: center
-				margin: 42px 14px 0
-				vertical-align: top
-				&:hover
-					a
-						color: $blue
-						.menu_li_line
-							display: block
-				&.active
-					a
-						color: $blue
-						.menu_li_line
-							display: block
-				&:nth-child(4)
-					margin: 15px 135px 0
-					line-height: 20px
-					cursor: pointer
-					p
-						text-transform: uppercase
-						font-size: 24px
-						color: $blue
+.sticky_block
+	position: -webkit-sticky
+	position: -moz-sticky
+	position: -ms-sticky
+	position: -o-sticky
+	position: sticky
+	top: 0
+	z-index: 50
+	background: #fff
+	width: 100%
+	.logo
+		display: none
+	.menu_btn
+		display: none
+	ul
+		max-width: 910px
+		height: 100px
+		margin: 0px auto
+		list-style: none
+		li
+			display: inline-block
+			text-align: center
+			margin: 42px 14px 0
+			vertical-align: top
+			&:hover
 				a
-					font-size: 14px
-					font-weight: 600
-					text-decoration: none
-					color: #555555
+					color: $blue
 					.menu_li_line
-						display: none
-						width: 30px
-						border-bottom: 1px solid $blue
-						margin: 0 auto
+						display: block
+			&.active
+				a
+					color: $blue
+					.menu_li_line
+						display: block
+			&:nth-child(4)
+				margin: 15px 135px 0
+				line-height: 20px
+				cursor: pointer
+			p
+				text-transform: uppercase
+				font-size: 24px
+				color: $blue
+			a
+				font-size: 14px
+				font-weight: 600
+				text-decoration: none
+				color: #555555
+				.menu_li_line
+					display: none
+					width: 30px
+					border-bottom: 1px solid $blue
+					margin: 0 auto
 header
 	width: 100%
 	#main_header
@@ -215,7 +217,7 @@ header
 #about
 	@extend %maw_block
 	height: 300px
-	padding: 125px 15px 125px
+	padding: 125px 15px
 	.about_left_col
 		width: 50%
 		float: left
@@ -372,7 +374,7 @@ header
 				padding: 10px
 				border: 2px solid #dadada
 				border-radius: 50%
-				overflow: hiden
+				overflow: hidden
 				float: left
 				margin: 55px 46px 0px 63px
 			.trainer_about
