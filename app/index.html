@@ -9,26 +9,27 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
-	<header>
-		<nav class="sticky_menu">
+	<div class="stycky_block">
+		<nav id="sticky_menu">
 			<img src="img/logo.png" alt="logo" class="logo">
 			<ul>
-				<li><a href="#" class="active">About us<div class="menu_li_line"></div></a></li>
-				<li><a href="#">Reservation<div class="menu_li_line"></div></a></li>
-				<li><a href="#">Gallery<div class="menu_li_line"></div></a></li>
-				<li>
-					<a href="#">
+				<li><a href="#about">About us<div class="menu_li_line"></div></a></li>
+				<li><a href="#prices">Reservation<div class="menu_li_line"></div></a></li>
+				<li><a href="#gallery">Gallery<div class="menu_li_line"></div></a></li>
+				<li class="active">
+					<a href="#main_header">
 						<img src="img/logo.png" alt="logo">
 						<p>yoga</p>
 					</a>
 				</li>
-				<li><a href="#">Blog<div class="menu_li_line"></div></a></li>
-				<li><a href="#">Elements<div class="menu_li_line"></div></a></li>
-				<li><a href="#">Shop<div class="menu_li_line"></div></a></li>
+				<li><a href="#trainers_carousel">Blog<div class="menu_li_line"></div></a></li>
+				<li><a href="#features">Elements<div class="menu_li_line"></div></a></li>
+				<li><a href="#classes">Shop<div class="menu_li_line"></div></a></li>
 			</ul>
 		</nav>
-		<div class="main_header">
+	</div>
+	<header>
+		<div id="main_header">
 			<div class="header_left_col">
 				<div class="form">
 					<h3>Trial Class</h3>
@@ -50,7 +51,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="classes">
+	<div id="classes">
 		<div class="title">
 			<h2>yoga feature program</h2>
 			<p>Our Classes</p>
@@ -82,7 +83,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="gallery">
+	<div id="gallery">
 		<div class="gallery_img">
 			<img src="img/gallery_1.jpg" alt="">
 			<a class="img_hover" href="img/gallery_1.jpg" data-lightbox="gallery-group"></a>
@@ -116,7 +117,7 @@
 			<a class="img_hover" href="img/gallery_8.jpg" data-lightbox="gallery-group"></a>
 		</div>
 	</div>
-	<div class="about">
+	<div id="about">
 		<div class="about_left_col">
 			<h3>about us</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
@@ -135,7 +136,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="features">
+	<div id="features">
 		<div class="features_block">
 			<div class="feature">
 				<div class="feature_img"><img src="img/png/heartbeat.png" alt=""></div>
@@ -180,7 +181,7 @@
 		</div>
 	</div>
 	<div class="shop">
-		<div class="prices">
+		<div id="prices">
 			<div class="block_prices">
 				<p class="price_head">
 					<span class="dollar">$</span> 49<span class="month">/month</span>
@@ -215,7 +216,7 @@
 				<button class="price_btn">Buy now</button>
 			</div>
 		</div>
-		<div class="trainers_carousel">
+		<div id="trainers_carousel">
 			<div class="carousel_item">
 				<img src="img/trainer_1.png" alt="">
 				<div class="trainer_about">
