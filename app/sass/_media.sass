@@ -88,6 +88,8 @@
 			width: 50%
 			margin: 50px auto
 			float: none
+			img
+				max-width: 
 	.shop
 		#prices
 			.block_prices
@@ -98,7 +100,7 @@
 					margin: 0 auto 50px
 	
 		#trainers_carousel
-				width: 700px
+				max-width: 700px
 				.carousel_item
 					img
 						margin: 55px 46px 0px 13px
@@ -141,7 +143,82 @@
 /// Small Devices, Tablets /
 @media only screen and (max-width : 768px)
  /**/
+	.sticky_block
+		height: 100px
+		background: #fff
+		.logo
+			display: block
+			float: left
+			line-height: 20px
+			cursor: pointer
+			text-transform: uppercase
+			font-size: 24px
+			font-weight: 600
+			text-align: center
+			color: $blue
+			margin: 20px 0 0 25px
+		.menu_btn
+			display: block
+			height: 50px
+			width: 50px
+			padding: 25px 25px 0 0
+			float: right
+			cursor: pointer
+		ul
+			display: none
+			padding-top: 100px
+			li
+				background: #fff
+				display: block
+				margin: 0
+				padding: 5px
+				a
+					font-size: 24px
+				&:nth-child(4)
+					display: none
 	
+	header
+		width: 100%
+		#main_header
+			.header_left_col
+				width: 100%
+				float: none
+				margin: 0 auto
+				padding-top: 40px
+				.form
+					float: none
+					margin: 0 auto 
+					padding: 35px 40px 95px 30px
+			.header_right_col
+				width: 100%
+				float: none
+				text-align: center
+				br
+					display: none
+				h1
+					padding: 0 15px 
+					margin-top: 20px
+					font-size: 38px
+				p
+					padding: 0 15px
+					font-size: 30px
+					margin-top: 20px
+
+	#about
+		.about_right_col
+			width: 80%
+	#features
+		.features_block
+			.feature
+				width: 50%
+	
+@media only screen and (max-width : 727px)
+ /**/
+	
+/// Extra Small Devices, Phones /
+@media only screen and (max-width : 650px)
+ /**/
+
 
 /// Extra Small Devices, Phones /
 @media only screen and (max-width : 480px)
@@ -166,15 +243,11 @@
 
 
 /// Small Devices, Tablets /
-@media only screen and (min-width : 768px)
+@media only screen and (min-width : 769px)
  /**/
-
-
-	//.menu
+	.sticky_block
 		ul
-			display: inline-block !important
-
-
+			display: block !important
 
 /// Medium Devices, Desktops /
 @media only screen and (min-width : 992px)
