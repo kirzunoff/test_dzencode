@@ -853,6 +853,10 @@ header #main_header .header_right_col p {
           border-radius: 17px;
 }
 
+.shop #prices .block_prices button:hover {
+  background: #5363db;
+}
+
 .shop #trainers_carousel {
   background: #fff;
   height: 250px;
