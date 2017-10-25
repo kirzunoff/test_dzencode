@@ -214,7 +214,45 @@
 	
 @media only screen and (max-width : 727px)
  /**/
-	
+	.shop
+		#trainers_carousel
+			width: 90%
+			height: 395px
+			.owl-wrapper-outer
+				height: 500px
+			.carousel_item
+				width: 100%
+				img
+					display: block
+					width: 100px
+					margin: 20px auto 0
+					float: none
+				.trainer_about
+					text-align: center
+					float: none
+					max-width: 300px
+					padding: 0 15px
+					margin: 20px auto 0
+					&::after
+						bottom: 53px
+						right: -10px
+					.vertical_line
+						display: none
+					.position
+						margin-top: 20px
+					.trainer_min
+						position: static
+						margin: 0 auto
+						img
+							width: 70px
+							margin: 8px 10px 0 0
+						p
+							padding-top: 22px
+			.owl-controls
+				.owl-buttons
+					.owl-prev::before,
+					.owl-next::before
+						display: none
 /// Extra Small Devices, Phones /
 @media only screen and (max-width : 650px)
  /**/
