@@ -31,4 +31,28 @@ $(function(){
         $('#sticky_menu ul').slideToggle();
     });
 	
+	$('.price_btn_basic').hover(
+    function(){
+        $('.block_basic').css('background-color','#5363db');
+    },
+    function(){
+        $('.block_basic').css('background-color','#5b6ceb');
+    });
+	
+	$('.price_btn_pro').hover(
+    function(){
+        $('.block_pro').css('background-color','#5363db');
+    },
+    function(){
+        $('.block_pro').css('background-color','#5b6ceb');
+    });
+	
+	$('.price_btn_premium').hover(
+    function(){
+        $('.block_premium').css('background-color','#5363db');
+    },
+    function(){
+        $('.block_premium').css('background-color','#5b6ceb');
+    });
+	
 });
