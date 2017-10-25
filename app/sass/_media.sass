@@ -29,6 +29,10 @@
 					padding: 0
 					text-align: center
 		#trainers_carousel
+			.carousel_item
+				.trainer_about
+					&::after
+						right: 0px
 			.owl-controls
 				.owl-pagination
 					display: none
@@ -41,9 +45,98 @@
 						&:nth-child(3)
 							margin: 0 60px 30px 0
 /// Medium Devices, Desktops /
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 985px)
  /**/
+	.sticky_block
+		ul
+			max-width: 710px
+			li
+				&:nth-child(4)
+					margin: 15px 35px 0
+	header
+		#main_header
+			.header_right_col
+				h1
+					padding-left: 15px
+					font-size: 38px
+				p
+					padding-left: 15px
+					font-size: 30px
+	#classes
+		.yoga_classes
+			.yoga_class
+				max-width: 570px
+				width: 100%
+				&:first-child,
+				&:nth-child(3)
+					margin-right: 0px
+	#gallery
+		.gallery_img
+			position: relative
+			width: 50%
+	#about
+		height: 530px
+		padding: 50px 15px
+		p
+		.about_left_col
+			width: 100%
+			text-align: center
+			float: none
+			p
+				margin: 0 auto
+		.about_right_col
+			width: 50%
+			margin: 50px auto
+			float: none
+	.shop
+		#prices
+			.block_prices
+				width: 570px
+				margin: 0 auto 50px
+				float: none
+				&:nth-child(2)
+					margin: 0 auto 50px
 	
+		#trainers_carousel
+				width: 700px
+				.carousel_item
+					img
+						margin: 55px 46px 0px 13px
+					.trainer_about
+						max-width: 450px
+						padding: 50px 0 0 20px
+						.position
+							margin-top: 20px
+						.trainer_min
+							position: absolute
+							left: 140px
+							bottom: -95px
+							width: 165px
+							img
+								float: left
+								padding: 0
+								margin: 0 10px 0 0
+							p
+								color: #555555
+								font-size: 14px
+								font-weight: 700
+								font-style: normal
+								margin-top: 12px
+							span
+								font-size: 12px
+								color: #777777
+	footer
+		.footer_block
+			.footer_left_col
+				width: 70%
+			.footer_right_col
+				width: 30%
+				ul
+					li
+						margin-bottom: 15px
+						&:first-child,
+						&:nth-child(3)
+							margin: 0 0px 15px 0
 
 /// Small Devices, Tablets /
 @media only screen and (max-width : 768px)
