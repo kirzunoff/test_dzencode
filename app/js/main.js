@@ -27,4 +27,8 @@ $(function(){
 		navigationText: false,
 	});
 	
+	$('.menu_btn').click(function(){
+        $('#sticky_menu ul').slideToggle();
+    });
+	
 });
