@@ -266,6 +266,7 @@
 				padding-top: 15px
 	footer
 		.footer_block
+			height: 500px
 			.footer_left_col
 				width: 100%
 				text-align: center
@@ -275,6 +276,62 @@
 				margin-top: 50px
 				width: 100%
 				text-align: center
+
+/// Extra Small Devices, Phones /
+@media only screen and (max-width : 540px)
+ /**/
+	
+	#classes
+		text-align: center
+		padding: 50px 15px 0 
+		.title
+			h2
+				text-transform: uppercase
+				font-size: 30px
+				font-weight: 700
+				color: $blue
+			p
+				font-family: $fs
+				font-size: 40px
+				color: #777777
+				margin-bottom: 30px
+		.yoga_classes
+			display: flex
+			flex-direction: row
+			justify-content: center
+			flex-wrap: wrap
+			align-items: flex-start
+			align-content: flex-start
+			margin-bottom: 125px
+			.yoga_class
+				max-width: 270px
+				width: 100%
+				text-align: center
+				box-shadow: 5px 0 15px rgba(153,153,153,.3)
+				border-radius: 7px
+				margin-bottom: 25px
+				&::after
+					content: ""
+					clear: both
+					display: block
+				img
+					float: none
+					margin-right: 0px
+					border-radius: 7px
+				h4
+					text-transform: uppercase
+					font-size: 20px
+					font-weight: 700
+					padding-top: 20px
+					color: #777777
+				p
+					font-size: 14px
+					padding: 0 10px
+					margin: 35px auto 17px
+					color: #555555
+				span
+					font-size: 14px
+					color: #999999
 
 /// Extra Small Devices, Phones /
 @media only screen and (max-width : 480px)
